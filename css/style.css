@@ -1,0 +1,52 @@
+.menu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.points {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.titulo {
+    font-size: 40pt;
+    text-align: center;
+}
+
+.background {
+    margin-top: 10px;
+    height: 400px;
+    width: 100vw;
+}
+
+.dino {
+    background-image: url('../img/dino.png');
+    height: 60px;
+    width: 60px;
+    position: absolute;
+    top: 472px;
+}
+
+.cacto {
+    background-image: url('../img/cactus.png');
+    width: 60px;
+    height: 60px;
+    position: absolute;
+}
+
+
+@keyframes slideToLeft {
+    from {
+        background-position: 7000%;
+    } 
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    padding-top: 20px;
+    background-image: url('../img/background.png');
+    background-repeat: repeat-x;
+    animation: slideToLeft 600s infinite linear;
+}
